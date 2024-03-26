@@ -67,14 +67,15 @@ body {
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
+    color: #ffffff;
     text-transform: uppercase;
-    color: #fff;
+
 }
 
 p {
     margin-bottom: 40px;
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
     padding: 0 100px;
 }
 
@@ -101,7 +102,6 @@ p {
 }
 
 .content {
-
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -110,13 +110,11 @@ p {
 }
 
 .sau {
-
     padding: 30px;
     background: #1f1f1f;
 }
 
 .box-container {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -124,7 +122,6 @@ p {
 }
 
 .box-container .box {
-
     height: 11rem;
     width: 17rem;
     background: #101010;
@@ -132,11 +129,9 @@ p {
     border-radius: 1rem;
     box-shadow: 0 .3 5rem rgb(0, 0, .5);
     margin: 2rem;
-
 }
 
 .box-container .box i {
-
     height: 3rem;
     width: 3rem;
     line-height: 3rem;
@@ -149,31 +144,33 @@ p {
 }
 
 .box-container .box h3 {
-
     font-size: 20px;
     color: #9c27b0;
-
 }
 
 .box-container .box p {
     padding: 0% 15px;
-
     font-size: 16px;
-
 }
 
-.about {
-
-    background: #171717;
-
-}
-
-
-
-.contac.about{
-   background-color: #101010;
-}
+.content.contact,
 .content.about {
+    color: black;
+}
+
+.content.contact {
+    margin-top: 50px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.content.about {
+    background: #171717;
     position: relative;
     /* Otros estilos necesarios para .content.about */
 }
@@ -188,24 +185,22 @@ p {
     background-repeat: no-repeat;
     background-position: center;
 }
-@media  (max-width: 768px){
 
+
+
+
+
+@media  (max-width: 768px) {
     .title {
         margin-bottom: 0;
-        font-size:40px;
-
-        
+        font-size: 40px;
     }
 
     .sau {
         height: 120vh;
-
     }
 
-    .navbar{
-
+    .navbar {
         display: none;
     }
-} 
-    
-
+}
