@@ -159,8 +159,8 @@ p {
 }
 
 .content.contact {
-    margin-top: 50px;
-    height: 60vh;
+    margin-top: 20px;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
