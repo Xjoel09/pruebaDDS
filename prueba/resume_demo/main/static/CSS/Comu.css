@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.sau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 0 100px;
+}

@@ -74,7 +74,7 @@ body {
 
 p {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 30px;
     color: #ffffff;
     padding: 0 100px;
 }
@@ -180,14 +180,58 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 450px; /* Altura deseada para la imagen */
+    height: 450px; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 
-
+        .box {
+            text-align: center; 
+        }
+    
+        .box img {
+            max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+            height: auto; /* Permite que la altura de las imágenes se ajuste automáticamente manteniendo la proporción */
+            display: block; /* Evita el espacio adicional debajo de las imágenes */
+            margin: 0 auto; /* Centra horizontalmente las imágenes dentro de los contenedores */
+        }
+    
+        
+        .social-icons {
+            margin-top: 20px; /* Ajusta el espacio entre el texto y los iconos */
+        }
+    
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px; /* Ajusta el espacio entre los iconos */
+            font-size: 60px; /* Tamaño de los iconos */
+        }
+    
+        /* Estilo personalizado para el icono de Instagram */
+        .social-icons a.instagram {
+            color: #FF00FF; /* Color de Instagram */
+        }
+    
+        /* Estilo personalizado para el icono de Twitter */
+        .social-icons a.twitter {
+            color: #1da1f2; /* Color de Twitter */
+        }
+    
+        /* Estilo personalizado para el icono de WhatsApp */
+        .social-icons a.whatsapp {
+            color: #25d366; /* Color de WhatsApp */
+        }
+    
+        /* Estilo personalizado para el icono de Facebook */
+        .social-icons a.facebook {
+            color: #1877f2; /* Color del contorno de Facebook */
+        }
+        .social-icons a.facebook i {
+            color: #1da1f2; /* Color de la letra "f" en Facebook */
+        }
+    
 
 
 @media  (max-width: 768px) {

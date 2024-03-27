@@ -13,4 +13,5 @@ app_name = "main"
 
 urlpatterns = [
     path('', views.index, name="index"),
+    path('Comunidad', views.Comunidad, name="Comunidad"),
 ]

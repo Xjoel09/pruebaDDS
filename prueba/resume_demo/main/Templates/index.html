@@ -3,23 +3,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+
+    <link rel="stylesheet" href="style.css">
+
+
     <title>Web Nutri</title>
 </head>
 <body>
 
     <div class="head">
         <div class="logo">
-            <a href="#">Logo</a>
+            <a href="#">WEB NUTRI</a>
         </div>
 
         <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Comunidad</a>
-            <a href="#">Recetas</a>
-            <a href="#">Contacto</a>
+            <a href="{% url 'main:index' %}">Inicio</a>
+            <a href="{% url 'main:Comunidad' %}">Comunidad</a>
+            
         </nav>
     </div>
 
@@ -28,71 +33,109 @@
         <h2 class="title">Inicio</h2>
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <p> 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque mollitia natus id porro dolore reiciendis odit ab quae! Voluptatem quisquam, explicabo ad aspernatur debitis
-            distinctio! Cum ipsa porro optio similique.
+            La nutrición es el proceso biológico que ocurre en un ser vivo cuando su organismo absorbe, de los alimentos y líquidos, los nutrientes que necesita para su crecimiento y el desarrollo de las funciones vitales. 
+            A través de la alimentación, el organismo incorpora hidratos de carbono, vitaminas, minerales, proteínas y grasas.
         </p>
+        
 
         <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
+            <a href="#" class="btn">SABER MAS</a>
            
         </div> 
     </header>
 
-    <section class="content sau">
+    <style>
+        .box {
+            text-align: center; /* Para centrar el contenido dentro de los contenedores */
+        }
+    
+        .box img {
+            max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+            height: auto; /* Permite que la altura de las imágenes se ajuste automáticamente manteniendo la proporción */
+            display: block; /* Evita el espacio adicional debajo de las imágenes */
+            margin: 0 auto; /* Centra horizontalmente las imágenes dentro de los contenedores */
+        }
+    </style>
+    
+    <section class="content sau" style="height: 50vh;">
         <h2 class="title"> Comunidad </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ut mollitia soluta porro velit sed molestiae! Veniam unde debitis ab. Harum assumenda 
-            modi porro illum a vero dolores quidem odit!
-        </p>
-
         <div class="box-container">
             <div class="box">
-                <i class="fab fa-angular"></i>
+                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 1">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
             <div class="box">
-                <i class="fab fa-apple"></i>
+                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 2">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
             <div class="box">
-                <i class="fab fa-android"></i>
+                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 3">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
         </div>
-    </section>
+    </section>
 
     <section class="content about" style="background-image: url('{% static 'img/Receta.jpg' %}'); background-repeat: no-repeat; 
-        background-attachment: fixed; background-size: cover; text-align: 
-          center; display: flex; justify-content: center; align-items: 
-            center; height: 50vh !important; background-position: center;">
-        <h2 class="title">Recetas</h2>
+    background-attachment: fixed; background-size: cover; text-align: 
+      center; display: flex; justify-content: center; align-items: 
+        center; height: 120vh !important; background-position: center;">
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ducimus,
-             libero blanditiis voluptates molestias autem ab ratione, 
-            culpa possimus officia eius laudantium modi atque. Alias sit esse voluptatem deleniti delectus!</p>
-        
-        <a href="#" class="btn">Saber mas</a>
-        
-    </section>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <h2 class="title">Recetas</h2>
+    <p>ENSALADA CON NARANAJA, QUESO Y PISTACHOS
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Empezamos con unas ensaladas para seguir con cremas, platos para mejorar la salud con huevos, pasta, carne, verduras y pescados. 
+        ¡Ah! Y nos olvidamos de los postres. Esta ensalada con naranja, queso de cabra y pistachos,
+         estos aportan vitamina, minerales y proteínas. Si no tienes, sustitúyelos por otro fruto seco.</p>
+    
+    <p> CARPACCIO DE PEPINO CON SARDINAS
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Una receta que mejora la salud y te cuida porque el pepino aporta fibra, 
+        vitaminas del grupo B, C, E y A y contiene importantes minerales como el hierro, el calcio, el fósforo, el magnesio y el potasio.</p>
+
+    <p> Anota esto: las zanahorias son ricas en vitaminas (C, E, B3, B6, B1, B2); carotenos, retinol y ácido fólico. 
+        ¿Te parece preparar una crema con ellas? Ojo, aunque sea de verduras, esta receta es alta en grasas.</p>
+    
+    <!-- Agrega el enlace del video de YouTube aquí -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/z9ov3C7XM3o" frameborder="0" allowfullscreen></iframe>
+
+    <a href="https://www.elmueble.com/cocinas/16-recetas-que-mejoran-tu-salud-y-te-cuidan_45045" class="btn">SABER MAS</a>
+
+</section>
+
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-    <section class="content contact" style="position: relative; text-align: center; color: black;">
+   
+
+    <section class="content contact" style="position: relative; text-align: center; color: black; height: 100vh;">
         <h2 class="title">Contacto</h2>
+
         <p>Contactanos y síguenos en nuestras redes</p>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="tel:+1234567890" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+        </div>
         <figure class="background-image" style="position: relative; overflow: hidden; width: 100%;">
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="{% static 'img/vege2.jpg' %}" style="width: 100%; height: 100%; display: block;" alt="nose">
+
+        <figure class="background-image" style="position: relative; overflow: hidden; width: 400px; margin: auto;">
+            <img src="{% static 'img/salud.jpg' %}" style="width: 100%; height: auto; display: block;" alt="nose">
         </figure>
     </section>
-    
-
 </body>
 </html>
