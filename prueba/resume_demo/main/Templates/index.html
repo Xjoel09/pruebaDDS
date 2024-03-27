@@ -3,9 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+
+    <link rel="stylesheet" href="style.css">
+
+
     <title>Web Nutri</title>
 </head>
 <body>
@@ -31,6 +37,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque mollitia natus id porro dolore reiciendis odit ab quae! Voluptatem quisquam, explicabo ad aspernatur debitis
             distinctio! Cum ipsa porro optio similique.
         </p>
+        
 
         <div class="btn-home">
             <a href="#" class="btn">Saber mas</a>
@@ -65,18 +72,25 @@
     </section>
 
     <section class="content about" style="background-image: url('{% static 'img/Receta.jpg' %}'); background-repeat: no-repeat; 
-        background-attachment: fixed; background-size: cover; text-align: 
-          center; display: flex; justify-content: center; align-items: 
-            center; height: 50vh !important; background-position: center;">
-        <h2 class="title">Recetas</h2>
+    background-attachment: fixed; background-size: cover; text-align: 
+      center; display: flex; justify-content: center; align-items: 
+        center; height: 50vh !important; background-position: center;">
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ducimus,
-             libero blanditiis voluptates molestias autem ab ratione, 
-            culpa possimus officia eius laudantium modi atque. Alias sit esse voluptatem deleniti delectus!</p>
-        
-        <a href="#" class="btn">Saber mas</a>
-        
-    </section>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <h2 class="title">Recetas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ducimus,
+         libero blanditiis voluptates molestias autem ab ratione, 
+        culpa possimus officia eius laudantium modi atque. Alias sit esse voluptatem deleniti delectus!</p>
+    
+    <!-- Agrega el enlace del video de YouTube aquí -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/ZrOX5lMg4Zg" frameborder="0" allowfullscreen></iframe>
+
+    <a href="#" class="btn">Saber mas</a>
+
+</section>
+
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -90,9 +104,10 @@
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="{% static 'img/vege2.jpg' %}" style="width: 100%; height: 100%; display: block;" alt="nose">
+
+        <figure class="background-image" style="position: relative; overflow: hidden; width: 400px; margin: auto;">
+            <img src="{% static 'img/salud.jpg' %}" style="width: 100%; height: auto; display: block;" alt="nose">
         </figure>
     </section>
-    
-
 </body>
 </html>
