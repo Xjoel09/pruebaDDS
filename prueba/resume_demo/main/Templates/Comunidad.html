@@ -6,38 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
     <link rel="stylesheet" href="{% static 'CSS/Comu.css' %}">
-
-
+    
     <title>Comunidad</title>
 </head>
 <body>
-        <div class="head">
-            <div class="logo">
-                <a href="#">WEB NUTRI</a>
-            </div>
-    
-            <nav class="navbar">
-                <a href="{% url 'main:index' %}">Inicio</a>
-                <a href="{% url 'main:Comunidad' %}">Comunidad</a>
-                
-            </nav>
+    <div class="head">
+        <div class="logo">
+            <a href="{% url 'main:index' %}">WEB NUTRI</a>
         </div>
-        <section class="content sau">
-            <h2 class="title">Para nuestra comunidad </h2>
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <p>
-                Nutrición y salud
-                Existen seis clases de nutrientes que el cuerpo necesita: carbohidratos, proteínas, lípidos, vitaminas, minerales y agua. Es importante consumir diariamente estos seis grupos de nutrientes para construir y mantener una función corporal saludable y tener un óptimo estado de salud.
-                
-                Los nutrientes o principios nutritivos se pueden clasificar teniendo en cuenta las necesidades diarias, basadas en las recomendaciones nutricionales en macronutrientes, son los nutrientes que necesitamos en mayor aporte diario como los hidratos de carbono, proteínas, lípidos y el agua. Y en micronutrientes, son los nutrientes que necesitamos en menor aporte diario como las vitaminas y los minerales.
-                
-                Las principales funciones de los nutrientes en nuestro cuerpo son: 1-obtener energía (función energética), 2-formar y mantener estructuras (función plástica), 3-regular los procesos metabólicos (función reguladora).
-                
-                Una salud pobre puede ser causada por un desbalance de nutrientes, denominada malnutrición, ya sea por exceso o deficiencia. La deficiencia o exceso de los distintos nutrientes afectan indirectamente la función hormonal. Así, como ellos regulan en gran parte, la expresión de genes, las hormonas representan un nexo entre la nutrición y nuestros genes, que son expresados en nuestro fenotipo. La fuerza y naturaleza de este nexo están continuamente bajo investigación, sin embargo, observaciones recientes han demostrado el rol crucial de la nutrición en la actividad y función hormonal y por lo tanto en la salud.
-                
-                De acuerdo a la Organización Mundial de la Salud [(WHO: 1996)], más que el hambre, el verdadero reto hoy en día es la deficiencia de micronutrientes (vitaminas, minerales) que no permiten al organismo asegurar el crecimiento y mantener sus funciones vitales.
-            </p>
 
+        <nav class="navbar">
+            <a href="{% url 'main:index' %}">Inicio</a>
+            <a href="{% url 'main:Comunidad' %}">Comunidad</a>
+        </nav>
+    </div>
+    <section class="content sau">
+        <h2 class="title">Para nuestra comunidad</h2>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Nutrición y salud
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            Existen seis clases de nutrientes que el cuerpo necesita: carbohidratos, proteínas, lípidos, vitaminas, minerales y agua. Es importante consumir diariamente estos seis grupos de nutrientes para construir y mantener una función corporal saludable y tener un óptimo estado de salud.
+            
+            Los nutrientes o principios nutritivos se pueden clasificar teniendo en cuenta las necesidades diarias, basadas en las recomendaciones nutricionales en macronutrientes, son los nutrientes que necesitamos en mayor aporte diario como los hidratos de carbono, proteínas, lípidos y el agua. Y en micronutrientes, son los nutrientes que necesitamos en menor aporte diario como las vitaminas y los minerales.
+            
+            Las principales funciones de los nutrientes en nuestro cuerpo son: 1-obtener energía (función energética), 2-formar y mantener estructuras (función plástica), 3-regular los procesos metabólicos (función reguladora).
+            
+            Una salud pobre puede ser causada por un desbalance de nutrientes, denominada malnutrición, ya sea por exceso o deficiencia. La deficiencia o exceso de los distintos nutrientes afectan indirectamente la función hormonal. Así, como ellos regulan en gran parte, la expresión de genes, las hormonas representan un nexo entre la nutrición y nuestros genes, que son expresados en nuestro fenotipo. La fuerza y naturaleza de este nexo están continuamente bajo investigación, sin embargo, observaciones recientes han demostrado el rol crucial de la nutrición en la actividad y función hormonal y por lo tanto en la salud.
+            
+            De acuerdo a la Organización Mundial de la Salud [(WHO: 1996)], más que el hambre, el verdadero reto hoy en día es la deficiencia de micronutrientes (vitaminas, minerales) que no permiten al organismo asegurar el crecimiento y mantener sus funciones vitales.
+        </p>
+    </section>
+    <style>
+        .content.sau {
+            background-image: url("{% static 'img/Haze Nutri2.jpg' %}");
+            background-size: cover; /* Para ajustar la imagen de fondo al tamaño del contenedor */
+            background-position: center; /* Para centrar la imagen de fondo */
+            color: white; /* Cambiar el color del texto para que sea visible sobre el fondo */
+        }
+    </style>
 </body>
 </html>

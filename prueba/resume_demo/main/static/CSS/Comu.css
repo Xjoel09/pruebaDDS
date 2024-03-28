@@ -16,9 +16,23 @@
     background-size: cover;
 }
 
-p {
-    margin-bottom: 50px;
-    font-size: 30px;
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
     color: #ffffff;
-    padding: 0 100px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo de color negro con opacidad */
+    display: inline; /* Hace que el fondo de color abarque solo el ancho del texto */
 }
+
+p {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    padding: 0 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo con opacidad */
+    display: inline-flex; /* Hace que el fondo de color abarque solo el ancho del texto */
+}
+ 
+   

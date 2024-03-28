@@ -18,7 +18,7 @@
 
     <div class="head">
         <div class="logo">
-            <a href="#">WEB NUTRI</a>
+            <a href="{% url 'main:index' %}">WEB NUTRI</a>
         </div>
 
         <nav class="navbar">
@@ -28,60 +28,42 @@
         </nav>
     </div>
 
-    <header class="content header" style="background-image: url('{% static 'img/Nutri.jpg' %}')">
+    <header class="content header" style="background-image: url('{% static 'img/Haze Nutri2.jpg' %}')">
 
         <h2 class="title">Inicio</h2>
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <p> 
             La nutrición es el proceso biológico que ocurre en un ser vivo cuando su organismo absorbe, de los alimentos y líquidos, los nutrientes que necesita para su crecimiento y el desarrollo de las funciones vitales. 
-            A través de la alimentación, el organismo incorpora hidratos de carbono, vitaminas, minerales, proteínas y grasas.
+            A través de la alimentación, el organismo incorpora hidratos de carbono, vitaminas, minerales, proteínas y grasas.
         </p>
-        
-
-        <div class="btn-home">
-            <a href="#" class="btn">SABER MAS</a>
            
         </div> 
     </header>
-
-    <style>
-        .box {
-            text-align: center; /* Para centrar el contenido dentro de los contenedores */
-        }
-    
-        .box img {
-            max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
-            height: auto; /* Permite que la altura de las imágenes se ajuste automáticamente manteniendo la proporción */
-            display: block; /* Evita el espacio adicional debajo de las imágenes */
-            margin: 0 auto; /* Centra horizontalmente las imágenes dentro de los contenedores */
-        }
-    </style>
-    
     <section class="content sau" style="height: 50vh;">
         <h2 class="title"> Comunidad </h2>
         <div class="box-container">
             <div class="box">
-                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 1">
+                <img src="{% static 'img/fresa.png' %}" alt="Descripción imagen 1">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
             <div class="box">
-                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 2">
+                <img src="{% static 'img/pizza3.jpg' %}" alt="Descripción imagen 2">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
             <div class="box">
-                <img src="{% static 'img/salud.jpg' %}" alt="Descripción imagen 3">
+                <img src="{% static 'img/verde.jpeg' %}" alt="Descripción imagen 3">
                 <h3>Lorem</h3>
                 <p>illum a vero dolores quidem odit!</p>
             </div>
         </div>
-    </section>
+    </section>
 
-    <section class="content about" style="background-image: url('{% static 'img/Receta.jpg' %}'); background-repeat: no-repeat; 
+    <section class="content about" style="background-image: url('{% static 'img/Haze nutri.jpg' %}'); background-repeat: no-repeat; 
     background-attachment: fixed; background-size: cover; text-align: 
       center; display: flex; justify-content: center; align-items: 
-        center; height: 120vh !important; background-position: center;">
+        center; height: 125vh !important; background-position: center;">
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -90,21 +72,26 @@
     <p>ENSALADA CON NARANAJA, QUESO Y PISTACHOS
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Empezamos con unas ensaladas para seguir con cremas, platos para mejorar la salud con huevos, pasta, carne, verduras y pescados. 
-        ¡Ah! Y nos olvidamos de los postres. Esta ensalada con naranja, queso de cabra y pistachos,
-         estos aportan vitamina, minerales y proteínas. Si no tienes, sustitúyelos por otro fruto seco.</p>
+        Empezamos con unas ensaladas para seguir con cremas, platos para mejorar la salud con huevos, pasta,
+         carne, verduras y pescados. 
+        ¡Ah! Y nos olvidamos de los postres. Esta ensalada con naranja,
+         queso de cabra y pistachos,
+         estos aportan vitamina, minerales y proteínas. Si no tienes, 
+         sustitúyelos por otro fruto seco.</p>
     
     <p> CARPACCIO DE PEPINO CON SARDINAS
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Una receta que mejora la salud y te cuida porque el pepino aporta fibra, 
-        vitaminas del grupo B, C, E y A y contiene importantes minerales como el hierro, el calcio, el fósforo, el magnesio y el potasio.</p>
+        vitaminas del grupo B, C, E y A y contiene importantes minerales
+         como el hierro, el calcio, el fósforo, el magnesio y el potasio.</p>
 
-    <p> Anota esto: las zanahorias son ricas en vitaminas (C, E, B3, B6, B1, B2); carotenos, retinol y ácido fólico. 
-        ¿Te parece preparar una crema con ellas? Ojo, aunque sea de verduras, esta receta es alta en grasas.</p>
+    <p> Anota esto: las zanahorias son ricas en vitaminas (C, E, B3, B6, B1, B2);
+         carotenos, retinol y ácido fólico. 
+        ¿Te parece preparar una crema con ellas? Ojo, 
+        aunque sea de verduras, esta receta es alta en grasas.</p>
     
-    <!-- Agrega el enlace del video de YouTube aquí -->
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/z9ov3C7XM3o" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="360" src="{% static 'VID/Web Nutri vid ‐ Hecho con Clipchamp.mp4' %}" frameborder="0" allowfullscreen></iframe>
 
     <a href="https://www.elmueble.com/cocinas/16-recetas-que-mejoran-tu-salud-y-te-cuidan_45045" class="btn">SABER MAS</a>
 
@@ -121,10 +108,8 @@
 
         <p>Contactanos y síguenos en nuestras redes</p>
         <div class="social-icons">
-            <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="tel:+1234567890" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Joel09X/media?t=oRfLEfgXZjpqSh6HLP57Aw&s=09" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="tel:65266683" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
         <figure class="background-image" style="position: relative; overflow: hidden; width: 100%;">
             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -138,4 +123,5 @@
         </figure>
     </section>
 </body>
+
 </html>

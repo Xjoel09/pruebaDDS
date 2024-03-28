@@ -33,6 +33,8 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: bold; 
+    font-family: 'Raleway', sans-serif; 
 }
 
 .navbar {
@@ -47,6 +49,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: bold; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .navbar a:hover {
@@ -69,15 +73,23 @@ body {
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo de color negro con opacidad */
+    display: inline; /* Hace que el fondo de color abarque solo el ancho del texto */
+    font-weight: bold; /* Establece el estilo de fuente en negrita */
+    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
 }
 
 p {
     margin-bottom: 40px;
     font-size: 30px;
-    color: #ffffff;
-    padding: 0 100px;
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo con opacidad */
+    display: inline-block; /* Hace que el fondo de color abarque solo el ancho del texto */
+    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
+    
 }
+
+
 
 .btn {
     display: inline-block;
@@ -87,6 +99,8 @@ p {
     color: #fff;
     text-decoration: none;
     background: #9c27b0;
+    font-weight: bold; /* Establece el estilo de fuente en negrita */
+    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
 }
 
 .btn:hover {
@@ -205,13 +219,8 @@ p {
     
         .social-icons a {
             display: inline-block;
-            margin: 0 10px; /* Ajusta el espacio entre los iconos */
+            margin: 0 20px; /* Ajusta el espacio entre los iconos */
             font-size: 60px; /* Tamaño de los iconos */
-        }
-    
-        /* Estilo personalizado para el icono de Instagram */
-        .social-icons a.instagram {
-            color: #FF00FF; /* Color de Instagram */
         }
     
         /* Estilo personalizado para el icono de Twitter */
@@ -224,13 +233,12 @@ p {
             color: #25d366; /* Color de WhatsApp */
         }
     
-        /* Estilo personalizado para el icono de Facebook */
-        .social-icons a.facebook {
-            color: #1877f2; /* Color del contorno de Facebook */
+        .box {
+            text-align: center; /* Para centrar el contenido dentro de los contenedores */
         }
-        .social-icons a.facebook i {
-            color: #1da1f2; /* Color de la letra "f" en Facebook */
-        }
+    
+       
+   
     
 
 
