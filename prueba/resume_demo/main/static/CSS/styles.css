@@ -73,19 +73,19 @@ body {
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo de color negro con opacidad */
-    display: inline; /* Hace que el fondo de color abarque solo el ancho del texto */
-    font-weight: bold; /* Establece el estilo de fuente en negrita */
-    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: inline; 
+    font-weight: bold; 
+    font-family: 'Oswald', sans-serif; 
 }
 
 p {
     margin-bottom: 40px;
     font-size: 30px;
-    color: #ffffff; /* Cambia el color del texto a blanco */
-    background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo con opacidad */
-    display: inline-block; /* Hace que el fondo de color abarque solo el ancho del texto */
-    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
+    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: inline-block; 
+    font-family: 'Oswald', sans-serif; 
     
 }
 
@@ -99,8 +99,8 @@ p {
     color: #fff;
     text-decoration: none;
     background: #9c27b0;
-    font-weight: bold; /* Establece el estilo de fuente en negrita */
-    font-family: 'Oswald', sans-serif; /* Cambia la fuente */
+    font-weight: bold; 
+    font-family: 'Oswald', sans-serif; 
 }
 
 .btn:hover {
@@ -186,7 +186,7 @@ p {
 .content.about {
     background: #171717;
     position: relative;
-    /* Otros estilos necesarios para .content.about */
+   
 }
 
 .background-image {
@@ -206,35 +206,35 @@ p {
         }
     
         .box img {
-            max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
-            height: auto; /* Permite que la altura de las imágenes se ajuste automáticamente manteniendo la proporción */
-            display: block; /* Evita el espacio adicional debajo de las imágenes */
-            margin: 0 auto; /* Centra horizontalmente las imágenes dentro de los contenedores */
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
         }
     
         
         .social-icons {
-            margin-top: 20px; /* Ajusta el espacio entre el texto y los iconos */
+            margin-top: 20px; 
         }
     
         .social-icons a {
             display: inline-block;
-            margin: 0 20px; /* Ajusta el espacio entre los iconos */
-            font-size: 60px; /* Tamaño de los iconos */
+            margin: 0 20px; 
+            font-size: 60px; 
         }
     
-        /* Estilo personalizado para el icono de Twitter */
+        
         .social-icons a.twitter {
-            color: #1da1f2; /* Color de Twitter */
+            color: #1da1f2; 
         }
     
-        /* Estilo personalizado para el icono de WhatsApp */
+        
         .social-icons a.whatsapp {
-            color: #25d366; /* Color de WhatsApp */
+            color: #25d366; 
         }
     
         .box {
-            text-align: center; /* Para centrar el contenido dentro de los contenedores */
+            text-align: center; 
         }
     
        
